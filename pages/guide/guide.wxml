@@ -1,0 +1,28 @@
+<!--pages/guide/guide.wxml-->
+<Step currStep="{{currStep}}"></Step>
+<swiper class="page-swiper" bindanimationfinish="changeGoodsSwipe" current="{{currStep-1}}" duration="300" bindchange="switchTabPage">
+  <swiper-item wx:for="{{[0,1,2]}}" wx:for-index="index" wx:key="index">
+    <scroll-view scroll-y="true">
+      <view class="contain">
+        <view class="text {{currStep==1?'active':''}}">
+          朦胧美的照片，原谅蜂眼尚不能欣赏
+          <text>拍摄时注意对焦，确保果实的图片清晰可见</text>
+        </view>
+        <view class="text {{currStep==2?'active':''}}">
+          虽然距离产生美，但是距离太远或考得太近，蜂眼都很难看清您的美
+        </view>
+        <view class="text {{currStep==3?'active':''}}">
+          拍照参考图片
+        </view>
+        <block wx:if="{{type=='size'||type=='sort'||type=='health'}}">
+          <image src="{{'/resources/images/errImg'+currStep+'.png'}}"></image>
+          <image src="/resources/images/rightImg.png"></image>
+        </block>
+        <block wx:if="{{type=='num'}}">
+          <image src="{{'/resources/images/errImg2'+currStep+'.png'}}"></image>
+          <image src="/resources/images/rightImg2.png"></image>
+        </block>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

@@ -1,0 +1,2 @@
+<!--components/icon/icon.wxml-->
+<view class='iconfont {{iconClass}}' style='color:{{color}};'></view>

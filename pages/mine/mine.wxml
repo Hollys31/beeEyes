@@ -1,0 +1,36 @@
+<!--pages/mine/mine.wxml-->
+<view class="user">
+ <!--  <image src="/resources/images/mineBanner"></image> -->
+  <image class="head" src="/resources/images/head.png"></image>
+ <view class="text"> Hi~,欧阳小夏，感谢您使用蜂眼~</view>
+</view>
+<view class="datas clearfix">
+  <view class="item">
+    <view>
+      <text>999</text> 天</view>
+    累计识别天数
+  </view>
+   <view class="item">
+    <view>
+      <text>999</text> 次</view>
+    累计识别次数
+  </view>
+   <view class="item">
+    <view>
+      <text>999</text> 个</view>
+    最多一次数果
+  </view>
+</view>
+<view class="modules">
+  <navigator hover-class="none" url="/pages/mine/myask" class="item">
+    <Icon class="icon" iconClass="icon-edit"></Icon>
+    我的提问
+     <Icon class="more" iconClass="icon-more"></Icon>
+  </navigator>
+  <navigator hover-class="none" url="/pages/mine/record" class="item">
+    <Icon class="icon" iconClass="icon-record"></Icon>
+    识别记录
+     <Icon class="more" iconClass="icon-more"></Icon>
+  </navigator>
+</view>
+<tabbar></tabbar>

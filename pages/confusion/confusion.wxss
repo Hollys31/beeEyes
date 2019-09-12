@@ -1,0 +1,36 @@
+/* pages/confusion/confusion.wxss */
+@import '/pages/news/news.wxss';
+
+.lecture .item .desc {
+  width: 100%;
+  color: #666;
+  font-size: 26rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+.lecture .item .img-wrap{
+ width: 690rpx;
+ height: 273rpx;
+ margin: 0 auto 10rpx;
+ border-radius: 20rpx 20rpx 0 0;
+ overflow: hidden;
+ position: relative;
+}
+.lecture .item .img-wrap::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.lecture .item .img-wrap image{
+  width: 100%;
+  height: 100%;
+}

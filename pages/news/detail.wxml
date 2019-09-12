@@ -1,0 +1,11 @@
+<!--pages/news/detail.wxml-->
+<view class="article">
+  <view class="title">5G商用时代到来，裕丰科技携手农业物联网进入发展快车道</view>
+  <view class="date">2019.07.26 <view class="text"><Icon class="icon" iconClass="icon-eye"></Icon>336</view></view>
+  <view class="p">
+  蜂窝通信网络技术的发展和升级，带来了一次又一次的社会改变和商业模式创新。５Ｇ＋农业，当先以５Ｇ技术为支点进行分析。从技术角度讲，５Ｇ具有三个典型场景，ｍＭＴＣ（海量大连接），ｅＭＢＢ（增强移动宽带），ｕＲＬＬＣ（低时延高可靠），这三个技术在智慧农业场景中，存在不少可落地方案。
+  </view>
+  <view class="p">
+    <image src="/resources/images/ok1.png"></image>
+  </view>
+</view>

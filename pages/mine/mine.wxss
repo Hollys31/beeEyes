@@ -1,0 +1,74 @@
+/* pages/mine/mine.wxss */
+
+.user {
+  width: 750rpx;
+  height: 299rpx;
+  background: #a4daf6;
+  color: #fff;
+  padding: 60rpx 40rpx;
+}
+
+.head {
+  background: #fff;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  float: left;
+}
+
+.user .text {
+  width: 500rpx;
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+  float: left;
+}
+
+.datas {
+  position: relative;
+  width: 690rpx;
+  height: 182rpx;
+  background: #fff;
+  box-shadow: 0px 11rpx 19rpx 2rpx rgba(204, 204, 204, 0.23);
+  border-radius: 20rpx;
+  color: #ccc;
+  margin:-90rpx  auto 0;
+}
+.datas .item{
+  width: 33.333%;
+  padding-top: 40rpx;
+  text-align: center;
+  float: left;
+  font-size: 24rpx;
+  line-height: 2.6em;
+}
+.datas .item text{
+  color: #333;
+  font-size: 50rpx;
+}
+.modules{
+ padding: 30rpx 0 60rpx;
+}
+.modules .item{
+height: 116rpx;
+line-height: 116rpx;
+display: block;
+border-bottom: 1px solid #eee;
+padding: 0 35rpx;
+}
+.modules  .item .icon{
+  width: 62rpx;
+  height: 62rpx;
+  line-height: 62rpx;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  background:linear-gradient(90deg,rgba(156,237,88,1) 0%,rgba(103,208,28,1) 100%);
+}
+.modules  .item:last-child .icon{
+  background:linear-gradient(90deg,rgba(90,219,255,1) 0%,rgba(0,171,219,1) 100%);
+}
+.modules  .item .more{
+  font-size: 26rpx;
+  color: #999;
+  float: right;
+}

@@ -1,0 +1,23 @@
+<!--pages/mine/myask.wxml-->
+<view class="news">
+  <navigator hover-class="none" url="/pages/news/detail" class="item clearfix">
+    <view class="left">
+      <view class="tit">标题</view>
+      <view class="desc">窝通信网络技术的发展和升级，带来了一次又一次的社会改变和商业模式创新…</view>
+      <view class="date clearfix">2019.07.26
+        <view class="text"><Icon class="icon" iconClass="icon-eye"></Icon> 336</view>
+      </view>
+    </view>
+    <image class="img" src="/resources/images/errImg1.png"></image>
+  </navigator> 
+  <navigator hover-class="none" url="/pages/news/detail" class="item clearfix">
+    <view class="left">
+      <view class="tit">标题</view>
+      <view class="desc">窝通信网络技术的发展和升级，带来了一次又一次的社会改变和商业模式创新…</view>
+      <view class="date clearfix">2019.07.26
+        <view class="text"><Icon class="icon" iconClass="icon-eye"></Icon> 336</view>
+      </view>
+    </view>
+    <image class="img" src="/resources/images/errImg1.png"></image>
+  </navigator> 
+</view>

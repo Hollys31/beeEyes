@@ -1,0 +1,6 @@
+/* pages/mine/record.wxss */
+@import '/pages/news/news.wxss';
+.news .left{
+  padding-top: 35rpx;
+  line-height: 2em;
+}

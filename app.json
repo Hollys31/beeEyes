@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/takePhoto/takePhoto",
+    "pages/guide/guide",
+    "pages/recognition/recognition",
+    "pages/recognition/detail",
+    "pages/news/news",
+    "pages/news/detail",
+    "pages/confusion/confusion",
+    "pages/confusion/lecture",
+    "pages/mine/mine",
+    "pages/mine/myask",
+    "pages/mine/record"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "蜂眼",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#00BADB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "拍照识别"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "行业资讯"
+      },
+      {
+        "pagePath": "pages/confusion/confusion",
+        "text": "专家解惑"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

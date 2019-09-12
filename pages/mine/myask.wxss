@@ -1,0 +1,8 @@
+/* pages/mine/myask.wxss */
+@import '/pages/news/news.wxss';
+page{
+  background: #F9F9F9;
+}
+.news .item{
+  background: #fff;
+}

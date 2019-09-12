@@ -1,0 +1,9 @@
+<!--components/tabbar/tabbar.wxml-->
+<view class="tabbottom {{isIphoneX?'iphoneX-height':''}}">
+ <view class='list' >
+   <navigator wx:for="{{ tabBar.list}}" wx:key="{{index}}"  open-type='switchTab' url='{{item.pagePath}}' hover-class='none' class='item'  style="color:{{item.selected?tabBar.selectedColor:tabBar.color}}">
+    <Icon class="icon" iconClass="{{item.iconClass}}"></Icon>
+   <text> {{item.text}}</text>
+  </navigator> 
+ </view>
+</view>

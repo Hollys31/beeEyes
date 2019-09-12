@@ -1,0 +1,43 @@
+/* components/step/step.wxss */
+.step{
+  width: 610rpx;
+  height:60rpx;
+  margin: 40rpx auto;
+  overflow: hidden;
+}
+.step view{
+ float: left
+}
+.circle {
+  width:56rpx;
+  height:56rpx;
+  box-sizing:content-box;
+  margin: 0 6rpx;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.circle .icon{
+  font-size: 56rpx;
+  color: #ccc;
+}
+.circle.active .icon{
+  color: #00BADB;
+}
+.circle .num{
+  display: block;
+  width:56rpx;
+  height:56rpx;
+  line-height: 56rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.line{
+  width: 202rpx;
+  height: 2rpx;
+  background: #ccc;
+  margin:26rpx 0;
+}

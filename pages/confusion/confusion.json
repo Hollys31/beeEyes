@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "专家解惑",
+  "usingComponents": {
+     "tabbar": "../../components/tabbar/tabbar",
+    "Icon": "../../components/icon/icon"
+  }
+}

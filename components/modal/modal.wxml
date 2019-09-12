@@ -1,0 +1,8 @@
+<!--components/modal/modal.wxml-->
+<view class="modal-wrap" wx:if="{{show}}">
+  <view class="modal-inner">
+    <Icon class="icon" iconClass="{{iconClass}}" style="color:{{iconColor}}"></Icon>
+    <slot name="text"></slot>
+    <view class="button" bindtap="handelButton">{{btnText}}</view>
+  </view>
+</view>

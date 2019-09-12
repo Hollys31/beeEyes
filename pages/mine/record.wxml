@@ -1,0 +1,15 @@
+<!--pages/mine/record.wxml-->
+<view class="tab">
+  <text bindtap="changetab" data-idx="{{index}}" class="{{currTab==index?'mainColor':''}}" wx:for="{{tabs}}" wx:key="{{index}}">{{item.name}}</text>
+</view>
+<view class="news">
+  <navigator hover-class="none" url="/pages/news/detail" class="item clearfix">
+    <view class="left">
+      <view class="tit">2019-07-16 14:00</view>
+      <view class="date">
+       识别大小：75-80mm
+      </view>
+    </view>
+    <image class="img" src="/resources/images/errImg1.png"></image>
+  </navigator> 
+</view>

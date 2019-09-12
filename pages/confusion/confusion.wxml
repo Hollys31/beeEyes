@@ -1,0 +1,30 @@
+<!--pages/confusion/confusion.wxml-->
+<view class="tab">
+  <text bindtap="changetab" data-idx="{{index}}" class="{{currTab==index?'mainColor':''}}" wx:for="{{tabs}}" wx:key="{{index}}">{{item.name}}</text>
+</view>
+<image class="banner" src="/resources/images/banner2.png"></image>
+<view class="news" wx:if="{{currTab==0}}">
+  <navigator hover-class="none" url="/pages/news/detail" class="item clearfix">
+    <view class="left">
+      <view class="tit">标题</view>
+      <view class="desc">窝通信网络技术的发展和升级，带来了一次又一次的社会改变和商业模式创新…</view>
+      <view class="date clearfix">2019.07.26
+        <view class="text"><Icon class="icon" iconClass="icon-eye"></Icon> 336</view>
+      </view>
+    </view>
+    <image class="img" src="/resources/images/errImg1.png"></image>
+  </navigator> 
+</view>
+<view class="news lecture" wx:if="{{currTab==1}}">
+  <view  class="item clearfix">
+      <view class="img-wrap"><image  src="/resources/images/errImg1.png"></image></view>
+       <navigator hover-class="none" url="/pages/confusion/lecture">
+      <view class="tit">标题</view>
+      <view class="desc">窝通信网络技术的发展和升级，带来了一次又一次的社会改变和商业模式创新…</view>
+      <view class="date clearfix">2019.07.26
+        <view class="text"><Icon class="icon" iconClass="icon-eye"></Icon> 336</view>
+      </view>
+  </navigator> 
+   </view>
+</view>
+<tabbar></tabbar>

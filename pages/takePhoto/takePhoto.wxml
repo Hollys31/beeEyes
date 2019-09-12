@@ -1,0 +1,47 @@
+<!--pages/takePhoto/takePhoto.wxml-->
+<block wx:if="{{!src&&!show}}">
+  <camera class="camera" flash="{{hasFlash?'on':'off'}}">
+    <cover-view class="tips">请将识别主体放入拍摄框内</cover-view>
+    <cover-image bindtap="handleFlash" class="flash" src="{{hasFlash?'/resources/images/flash.png':'/resources/images/flash1.png'}}"></cover-image>
+    <cover-image class="coverbg" src="/resources/images/camerabg.png"></cover-image>
+    <cover-view class="types"> <!-- bindtap="changetype" -->
+      <cover-view  data-type="{{item.type}}" class="item {{currType===item.type?'active':''}}" wx:for="{{modules}}" wx:key="{{index}}">
+        <cover-image wx:if="{{currType===item.type}}" src="{{'/resources/images/'+item.type+'1.png'}}"></cover-image>
+        <cover-image wx:else src="{{'/resources/images/'+item.type+'.png'}}"></cover-image>
+        <cover-view class="text">{{item.name}}</cover-view>
+      </cover-view>
+    </cover-view>
+  </camera>
+  <view class="charge">
+    <view class="item" bindtap="viewAlbums">
+      <Icon class="icon" iconClass="icon-album"></Icon>
+      浏览相册
+    </view>
+    <view class="item">
+      <Icon class="icon takephoto" bindtap="takePhoto" iconClass="icon-camera"></Icon>
+    </view>
+    <view class="item">
+      <navigator hover-class="none" url="{{'/pages/guide/guide?type='+currType}}">
+        <Icon class="icon" iconClass="icon-guide"></Icon>
+        拍照指南
+      </navigator>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{src&&!show}}">
+  <view class="photo">
+    <image mode="aspectFit" src="{{src}}"></image>
+    <view class="actions">
+      <view bindtap="canclePhoto">
+        <text>取消</text>
+      </view>
+      <view bindtap="toDiscern">
+        <text>确定识别</text>
+      </view>
+    </view>
+  </view>
+</block>
+<Modal btnText="重新拍摄" iconClass="icon-warn" iconColor="#f16043" show="{{show}}" bind:modalEvent="rePhoto">
+  <view slot="text">无法识别果品大小，请重新拍照后重试</view>
+</Modal>

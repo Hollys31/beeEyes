@@ -1,0 +1,10 @@
+<!--components/step/step.wxml-->
+<view class="step clearfix">
+  <block wx:for="{{[1,2,3]}}" wx:key="{{index}}">
+    <view class="circle {{currStep==item?'active':''}}" data-idx="{{item}}" bindtap="changeStep">
+      <Icon class="icon" iconClass="icon-step"></Icon>
+      <text class="num">{{item}}</text>
+    </view>
+    <view wx:if="{{item!=3}}" class="line"></view>
+  </block>
+</view>

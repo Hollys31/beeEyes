@@ -1,0 +1,133 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.0",
+	"appid": "wxde5b778ba7ebd6b1",
+	"projectname": "beeEyes",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 10,
+			"list": [
+				{
+					"id": -1,
+					"name": "拍照",
+					"pathName": "pages/takePhoto/takePhoto",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "指南",
+					"pathName": "pages/guide/guide",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "识别结果",
+					"pathName": "pages/recognition/recognition",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "结果详情",
+					"pathName": "pages/recognition/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "行业资讯",
+					"pathName": "pages/news/news",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "资讯详情",
+					"pathName": "pages/news/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "专家解惑",
+					"pathName": "pages/confusion/confusion",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "解惑详情",
+					"pathName": "pages/confusion/lecture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "问答详情",
+					"pathName": "pages/mine/askdetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

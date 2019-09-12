@@ -1,0 +1,35 @@
+/* pages/recognition/detail.wxss */
+page{
+  background: #F9F9F9;
+}
+.img {
+  width: 100%;
+  max-height: 55%;
+}
+
+.data {
+  font-size: 26rpx;
+  width: 100%;
+  position: relative;
+  margin-top: -38rpx;
+  border-radius: 50rpx 50rpx 0px 0px;
+  background: #F9F9F9;
+  padding: 30rpx 40rpx;
+  color: #4A4A4A;
+  line-height: 1.6em;
+  
+}
+.data .tit{
+  font-size: 34rpx;
+  color: #00BADB;
+  line-height: 2.2em;
+}
+.data .brief{
+  color: #999;
+}
+.data .article{
+ margin-top: 26rpx;
+}
+.data  .p{
+text-indent: 2em;
+}

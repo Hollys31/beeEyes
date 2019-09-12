@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="banner">
+  <image src="/resources/images/banner.png"></image>
+</view>
+<view class="modules clearfix">
+<block  wx:for="{{ modules}}" wx:key="{{index}}">
+ <navigator wx:if="{{item.type=='num'}}" url="{{'/pages/takePhoto/takePhoto?type='+item.type}}" hover-class="none" class="item">
+    <text>{{item.name}}</text>
+    <image src="{{'/resources/images/fruit'+(index+1)+'.png'}}"></image>
+  </navigator>
+  <view  wx:else  class="item" bindtap="showTips">
+    <text>{{item.name}}</text>
+    <image src="{{'/resources/images/fruit'+(index+1)+'.png'}}"></image>
+  </view>
+</block>
+</view>
+<tabbar></tabbar>
+<Modal btnText="确定" iconClass="icon-warn" iconColor="#f16043" show="{{show}}" bind:modalEvent="cancelModal">
+  <view slot="text">此功能正在完善中，敬请期待...</view>
+</Modal>

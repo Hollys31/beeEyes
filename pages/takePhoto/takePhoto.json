@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "拍照识别",
+  "usingComponents": {
+    "Icon": "../../components/icon/icon",
+    "Modal":"../../components/modal/modal"
+  }
+}

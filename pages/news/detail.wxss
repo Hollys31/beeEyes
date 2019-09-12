@@ -1,0 +1,46 @@
+/* pages/news/detail.wxss */
+.article{
+  padding: 30rpx;
+}
+.article .title{
+ font-size: 30rpx;
+ line-height: 1.6em;
+}
+.article .date{
+  line-height: 3em;
+  font-size: 22rpx;
+  color: #999;
+  margin-bottom: 10rpx;
+}
+.article .date .text{
+  display: inline-block;
+  float: right;
+}
+.article .p{
+  font-size: 26rpx;
+ text-indent: 2em;
+ color: #333;
+  line-height: 1.6em;
+}
+.article image{
+  margin: 30rpx 0;
+}
+.article .user{
+  margin: 0 0 60rpx;
+}
+.article .user .headerImg{
+  width: 92rpx;
+  height: 92rpx;
+  border-radius: 50%;
+  float: left
+}
+.article .user  .name{
+  width: 400rpx;
+  line-height: 2em;
+   padding: 20rpx 50rpx;
+   float: left;
+}
+.article .user  .name text{
+  color: #999;
+  display: block;
+}

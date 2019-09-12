@@ -1,0 +1,70 @@
+/* components/icon/icon.wxss */
+@font-face {
+  font-family: 'iconfont';  /* project id 1358148 */
+  src: url('//at.alicdn.com/t/font_1358148_jw44mk2py4j.eot');
+  src: url('//at.alicdn.com/t/font_1358148_jw44mk2py4j.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1358148_jw44mk2py4j.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1358148_jw44mk2py4j.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1358148_jw44mk2py4j.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1358148_jw44mk2py4j.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+.icon-camera::before {
+  content: '\e7a5';
+}
+.icon-guide::before{
+ content: '\e67e';
+}
+.icon-eye::before{
+ content: '\e61b';
+}
+.icon-flash::before{
+  content: '\e61c';
+}
+.icon-album::before{
+  content: '\e891'
+}
+.icon-step::before{
+  content: '\e605'
+}
+.icon-eye::before{
+  content: '\e61b'
+}
+.icon-play::before{
+  content: '\e63a'
+}
+.icon-discern::before{
+  content: "\e602"
+}
+.icon-news::before{
+  content: "\e601"
+}
+.icon-confuse::before{
+  content: "\e892"
+}
+.icon-center::before{
+content: "\e600"
+}
+.icon-edit::before{
+  content: "\e65f"
+}
+.icon-record::before{
+  content: "\e687"
+}
+.icon-more::before{
+  content: "\e60d"
+}
+.icon-ok::before{
+  content: "\e608"
+}
+.icon-warn::before{
+  content: "\e607"
+}

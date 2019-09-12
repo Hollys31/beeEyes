@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "行业资讯",
+  "usingComponents": {
+    "tabbar": "../../components/tabbar/tabbar",
+    "Icon": "../../components/icon/icon"
+  }
+}

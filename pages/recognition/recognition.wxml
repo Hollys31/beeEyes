@@ -1,0 +1,48 @@
+<!--pages/recognition/recognition.wxml-->
+<image class="img" src="{{fruit.imgAiPath}}"></image>
+<view class="data" wx:if="{{type=='size'}}">
+  <view class="typeImg">
+    <image src="/resources/images/fruit1.png"></image>
+  </view>
+  识别到果径范围
+  <view class="num">75-80
+    <text>mm</text>
+  </view>
+  <navigator  hover-class="none" url="/pages/takePhoto/takePhoto" class="button">重新拍摄</navigator>
+</view>
+<!-- 数量 -->
+<view class="data" wx:if="{{type=='num'}}">
+  <view class="typeImg typeImg2">
+    <image src="/resources/images/fruit2.png"></image>
+  </view>
+  识别到果实数目
+  <view class="num">{{count}}
+    <text>个</text>
+  </view>
+ <navigator  hover-class="none" url="/pages/takePhoto/takePhoto" class="button">重新拍摄</navigator>
+</view>
+<!-- 品种 -->
+<view class="data" wx:if="{{type=='sort'}}">
+  <view class="typeImg typeImg3">
+    <image src="/resources/images/fruit3.png"></image>
+  </view>
+  识别到植物品种
+  <view class="num">苹果
+    <text>相似度：90%</text>
+  </view>
+  <view class="charge clearfix">
+     <navigator  hover-class="none" url="/pages/takePhoto/takePhoto" class="button">重新拍摄</navigator>
+    <navigator class="more" hover-class="none" url="/pages/recognition/detail">了解更多</navigator>
+  </view>
+</view>
+<!-- 健康状态 -->
+<view class="data" wx:if="{{type=='health'}}">
+  <view class="typeImg typeImg4">
+    <image src="/resources/images/fruit4.png"></image>
+  </view>
+  识别到植物健康状态
+  <view class="num">正常状态
+    <text>可信度：95%</text>
+  </view>
+  <navigator hover-class="none" url="/pages/takePhoto/takePhoto" class="button">重新拍摄</navigator> 
+</view>

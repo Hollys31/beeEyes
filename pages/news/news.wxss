@@ -1,0 +1,84 @@
+/* pages/news/news.wxss */
+.banner{
+  width: 750rpx;
+  height: 350rpx;
+}
+.tab {
+  width: 100%;
+  height: 84rpx;
+  line-height: 84rpx;
+}
+
+.tab text {
+  padding: 0 20rpx;
+  color: #999;
+  display: inline-block;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.tab text.mainColor {
+  color: #00badb;
+  position: relative;
+  font-size: 30rpx;
+}
+
+.tab text.mainColor::before {
+  content: "";
+  width: 60rpx;
+  height: 5rpx;
+  border-radius: 3rpx;
+  background: #00badb;
+  position: absolute;
+  bottom: 0rpx;
+  left: 50%;
+  margin-left: -30rpx;
+}
+
+.news {
+  padding-bottom: 50rpx;
+}
+.news .item .left{
+  width: 460rpx;
+  float: left;
+  margin-right: 48rpx;
+}
+.news .item .img{
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 10rpx;
+  float:left;
+}
+.news .item {
+  color: #666;
+  font-size: 26rpx;
+  padding: 30rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.news .item .tit {
+  height: 40rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #333;
+  font-size: 30rpx;
+}
+
+.news .item .desc {
+  color: #666;
+  margin: 13rpx 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.news .item .date{
+  color: #999;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+.news .item .date .text{
+  float: right;
+}
